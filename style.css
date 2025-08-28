@@ -299,7 +299,7 @@ a {
   font-size: 27px;
   font-weight: 600;
   margin-bottom: 20px;
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .abt-sec-details p {
@@ -408,7 +408,7 @@ body.dark .card {
   .abt-sec-details h3 {
     font-size: 20px;
   
-  margin-left: 0px;
+  
 
   }
   .abt-sec-details p {
