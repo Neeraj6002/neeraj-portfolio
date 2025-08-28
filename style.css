@@ -307,7 +307,7 @@ a {
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 20px;
-  text-align: left;
+  
   text-align: center;
 }
 
@@ -379,12 +379,19 @@ body.dark .card {
     justify-items: center;
     gap: 40px;
   }
+  .abt-sec-details h3 {
+    font-size: 20px;
+    margin-left: 2px;
+  
+  
+
+  }
   .abt-sec-details {
     text-align: center;
   }
   .abt-sec-details p {
     text-align: center;
-    max-width: 600px;
+    
   }
   .btn-group {
     justify-content: center;
@@ -398,6 +405,9 @@ body.dark .card {
     max-width: 700px;
     margin: 0 auto;
   }
+  .abt-sec-details {
+  max-width: 750px;
+}
 }
 
 @media (max-width: 760px) {
@@ -407,10 +417,12 @@ body.dark .card {
   }
   .abt-sec-details h3 {
     font-size: 20px;
-  
-  
+    margin-left: 2px;
 
   }
+  .abt-sec-details {
+  max-width: 550px;
+}
   .abt-sec-details p {
     font-size: 14px;
     max-width: 400px;
