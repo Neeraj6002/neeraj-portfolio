@@ -288,6 +288,7 @@ a {
       grid-template-columns: 1fr;
       gap: 35px;
       align-items: center;
+      
     }
 
     
@@ -416,6 +417,11 @@ body.dark .primary-button {
     justify-items: center;      /* center items horizontally */
     gap: 40px;                  /* spacing between details and grid */
   }
+  .card {
+
+    max-width: 800px;
+
+}
 
   .abt-sec-details,
   .grid {
