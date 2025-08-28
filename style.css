@@ -276,167 +276,149 @@ a {
 /* abt */
 
 
-    .abt-heading h1 {
-      font-size: 40px;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.abt-heading h1 { 
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-    .abt-sec {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 35px;
-      align-items: center;
-      
-    }
+.abt-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+  padding: 0 20px;
+}
 
-    
+.abt-sec-details {
+  max-width: 550px;
+}
 
-    .abt-sec-details h3 {
-      font-size: 27px;
-      font-weight: 600;
-      margin-bottom: 20px;
-      margin-left: 10px;
-      
-    }
+.abt-sec-details h3 {
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
 
-    .abt-sec-details p {
-      color: #cfcfcf;
-      font-size: 15px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      max-width: 450px;
-      text-align: center;
-    }
+.abt-sec-details p {
+  color: #cfcfcf;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
+  text-align: center;
+}
 
-    /* Buttons */
-    .btn-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 20px;
-      margin-left: 100px;
-    }
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  margin-left: 130px;
+}
 
-    .cosmic-button {
-      background: linear-gradient(45deg, #4f46e5, #9333ea);
-      color: #fff;
-      padding: 10px 22px;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 14px;
-      transition: transform 0.3 ease;
-    }
+.cosmic-button {
+  background: linear-gradient(45deg, #4f46e5, #9333ea);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
 
-    .cosmic-button:hover {
-      opacity: 0.9;
-      transition: 0.3s ease;
-      background: linear-gradient(45deg,#9333ea,#4f46e5);
-    }
+.cosmic-button:hover {
+  background: linear-gradient(45deg, #9333ea, #4f46e5);
+  opacity: 0.9;
+}
 
-    .outline-button {
-      padding: 10px 22px;
-      border-radius: 30px;
-      border: 2px solid #4f46e5;
-      color: #4f46e5;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 14px;
-    }
+.outline-button {
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
 
-    .outline-button:hover {
-      background: rgba(79, 70, 229, 0.1);
-    }
+.outline-button:hover {
+  background: rgba(79, 70, 229, 0.1);
+}
+
+.grid {
+  display: grid;
+  gap: 25px;
+}
 
 .card {
-    background-color: hsl(0, 0%, 100%);
-    border: 1px solid hsl(214, 32%, 91%);
-    padding: 1rem;
-    border-radius: 8px;
-    max-width: 400px;
-    margin: 1rem auto;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(214, 32%, 91%);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px); 
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 body.dark .card {
-    background-color: hsl(222, 47%, 8%);
-    border-color: hsl(217, 33%, 20%);
+  background-color: hsl(222, 47%, 8%);
+  border-color: hsl(217, 33%, 20%);
 }
 
-.primary-button {
-    background-color: hsl(250, 47%, 60%);
-    color: hsl(210, 40%, 98%);
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    display: inline-block;
-}
-
-body.dark .primary-button {
-    background-color: hsl(250, 65%, 65%);
-    color: hsl(213, 31%, 91%);
-}
-
-
-@media (max-width: 760px) {
-    .abt-sec-details h3 {
-      font-size: 18px;
-      text-align: center;
-      margin-left: 0px;
-    }
-    .abt-sec-details p {
-        margin-left: 10px;
-        max-width: 350px;
-        text-align: center;
-    }
-
-    .card {
-    max-width: 80%;
-    }
-    .primary-button {
-    padding: 0.4rem 0.8rem;
-    } 
-    .btn-group {
-      margin-left: 55px;
-    }
-    }
-
-
-    @media (max-width: 1208px) {
+@media (max-width: 1208px) {
   .abt-sec {
-    grid-template-columns: 1fr; /* stack everything vertically */
-    justify-items: center;      /* center items horizontally */
-    gap: 40px;                  /* spacing between details and grid */
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+  }
+  .abt-sec-details {
+    text-align: center;
+  }
+  .abt-sec-details p {
+    text-align: center;
+  }
+  .btn-group {
+    justify-content: center;
+    margin-left: 10px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    width: 100%;
   }
   .card {
-
-    max-width: 800px;
-
-}
-
-  .abt-sec-details,
-  .grid {
-    text-align: center;         /* center text and cards */
-    justify-self: center;       /* ensure each item is centered */
+    max-width: 700px;
+    margin: 0 auto;
   }
-  
 }
 
-@media (min-width: 1208px) {
-      .abt-sec {
-        grid-template-columns: 1fr 1fr;
-      }
-      
-    }
+@media (max-width: 760px) {
+  .abt-heading h1 {
+    font-size: 28px;
+  }
+  .abt-sec-details h3 {
+    font-size: 20px;
+  }
+  .abt-sec-details p {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .btn-group {
+    gap: 10px;
+  }
+  .card {
+    max-width: 300px;
+    
+  }
+}
+
 
 /* skills */
 .skills-section {
