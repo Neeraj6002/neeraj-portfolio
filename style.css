@@ -384,6 +384,7 @@ body.dark .card {
   }
   .abt-sec-details p {
     text-align: center;
+    max-width: 600px;
   }
   .btn-group {
     justify-content: center;
@@ -407,7 +408,7 @@ body.dark .card {
   .abt-sec-details h3 {
     font-size: 20px;
   
-  margin-left: 30px;
+  margin-left: 0px;
 
   }
   .abt-sec-details p {
